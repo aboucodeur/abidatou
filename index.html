@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apprendre !</title>
+    <title>Abidatou !</title>
 
     <!-- Style de la page -->
     <style>
@@ -361,6 +361,139 @@
                             cout &lt;&lt; "3 + 4 = " &lt;&lt; result &lt;&lt; endl;
     
                             return 0;
+                        }
+                    </code>
+                </pre>
+            </details>
+
+            <!-- Java -->
+            <h1>Programmation Orientée Objet en Java</h1>
+            <p>
+                La programmation orientée objet (POO) est un paradigme de programmation qui repose sur le concept d'objets,
+                qui peuvent contenir des données sous forme de champs, souvent connus sous le nom d'attributs, et du code, sous
+                forme de procédures, souvent appelées méthodes. En Java, la POO est au cœur du langage.
+            </p>
+
+            <details>
+                <summary>Classes et Objets</summary>
+                <p>
+                    En Java, une classe est le modèle à partir duquel les objets sont créés. Un objet est une instance
+                    spécifique d'une classe. Les classes définissent les propriétés (attributs) et les comportements
+                    (méthodes) que les objets de cette classe partageront.
+                </p>
+                <pre>
+                    <code class="language-java">
+                        public class Person {
+                            // Attributs
+                            String name;
+                            int age;
+
+                            // Méthode
+                            void sayHello() {
+                                System.out.println("Hello, my name is " + name);
+                            }
+                        }
+
+                        // Création d'un objet
+                        Person person1 = new Person();
+                        person1.name = "John";
+                        person1.age = 25;
+                        person1.sayHello();
+                    </code>
+                </pre>
+            </details>
+
+            <details>
+                <summary>Encapsulation</summary>
+                <p>
+                    L'encapsulation consiste à regrouper les données et les méthodes qui les manipulent au sein d'une même
+                    unité, c'est-à-dire une classe en Java. Cela permet de restreindre l'accès aux détails internes d'un
+                    objet et de favoriser la modularité et la maintenance du code.
+                </p>
+                <pre>
+                    <code class="language-java">
+                        public class BankAccount {
+                            // Attribut privé
+                            private double balance;
+
+                            // Méthode pour accéder à la balance
+                            public double getBalance() {
+                                return balance;
+                            }
+
+                            // Méthode pour déposer de l'argent
+                            public void deposit(double amount) {
+                                if (amount > 0) {
+                                    balance += amount;
+                                    System.out.println("Deposit successful. New balance: " + balance);
+                                }
+                            }
+                        }
+                    </code>
+                </pre>
+            </details>
+
+            <details>
+                <summary>Héritage</summary>
+                <p>
+                    L'héritage permet à une classe (appelée sous-classe ou classe dérivée) de hériter des propriétés et
+                    méthodes d'une autre classe (appelée classe de base ou classe mère). Cela favorise la réutilisation du
+                    code et la création d'une hiérarchie de classes.
+                </p>
+                <pre>
+                    <code class="language-java">
+                        // Classe de base
+                        public class Animal {
+                            void makeSound() {
+                                System.out.println("Some generic sound");
+                            }
+                        }
+
+                        // Sous-classe qui hérite de Animal
+                        public class Dog extends Animal {
+                            // Override pour spécifier un son de chien
+                            @Override
+                            void makeSound() {
+                                System.out.println("Woof! Woof!");
+                            }
+                        }
+                    </code>
+                </pre>
+            </details>
+
+            <details>
+                <summary>Polymorphisme</summary>
+                <p>
+                    Le polymorphisme permet à un objet d'adopter différents comportements en fonction du contexte. En Java,
+                    cela peut être réalisé via le surchargement de méthode (méthodes portant le même nom mais avec des
+                    paramètres différents) et le remplacement de méthode (override).
+                </p>
+                <pre>
+                    <code class="language-java">
+                        // Polymorphisme par surchargement
+                        public class Calculator {
+                            int add(int a, int b) {
+                                return a + b;
+                            }
+
+                            double add(double a, double b) {
+                                return a + b;
+                            }
+                        }
+
+                        // Polymorphisme par remplacement
+                        public class Bird {
+                            void makeSound() {
+                                System.out.println("Some generic bird sound");
+                            }
+                        }
+
+                        public class Parrot extends Bird {
+                            // Override pour spécifier un cri de perroquet
+                            @Override
+                            void makeSound() {
+                                System.out.println("Squawk! Squawk!");
+                            }
                         }
                     </code>
                 </pre>
