@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre !</title>
+
+    <!-- Style de la page -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        #app {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #2070b4;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        details {
+            margin-bottom: 15px;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        p {
+            margin: 0;
+            padding: 5px 0;
+        }
+
+        /* pre {
+            background-color: #f9f9f9;
+            padding: 10px;
+            overflow: auto;
+        } */
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <!-- <script defer src=""></script> -->
+    <!-- and it's easy to individually load additional languages -->
+    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/cpp.min.js"></script> -->
+
+
+</head>
+
+<body>
+    <div id="app">
+        <div>
+            <h1>Formation programmation !</h1>
+            <ul>
+                <li>
+                    <strong>C++:</strong> <a href="https://www.w3schools.com/cpp" target="_blank">Apprendre</a>
+                </li>
+                <li>
+                    <strong>Java:</strong> <a href="https://www.w3schools.com/java" target="_blank">Apprendre</a>
+                </li>
+                <li>
+                    <strong>HTML:</strong> <a href="https://www.w3schools.com/html" target="_blank">Apprendre</a>
+                </li>
+                <li>
+                    <strong>CSS:</strong> <a href="https://www.w3schools.com/css" target="_blank">Apprendre</a>
+                </li>
+                <li>
+                    <strong>Base de donnee (POSTGRESQL) </strong> <a
+                        href=" https://www.w3schools.com/postgresql/index.php" target="_blank">Apprendre</a>
+                </li>
+            </ul>
+            <h1>Documents en francais !</h1>
+            <ul>
+                <li>
+                    <strong>HTML 5 / CSS 3 - PDF (fr) </strong> <a
+                        href="https://drive.google.com/file/d/123StfGzL9C-75ARrgCTnFqG7hUuqZ4EL/view?usp=drive_link"
+                        target="_blank">Apprendre</a>
+                </li>
+                <li>
+                    <strong>C++ - PDF (fr) </strong> <a
+                        href="https://drive.google.com/file/d/1ut9l-Zmo7d2RAepZoFZl1IQW0Lu5eu2t/view?usp=drive_link"
+                        target="_blank">Apprendre</a>
+                </li>
+                <li>
+                    <strong>Java - PDF (fr) </strong> <a
+                        href="https://drive.google.com/file/d/1K_Dh1NVG3GXhGdpKrYA9dHvgW3D2Mb4B/view?usp=sharing"
+                        target="_blank">Apprendre</a>
+                </li>
+                <li>
+                    <strong>Formation videos HTML (fr) </strong> <a
+                        href="https://grafikart.fr/formations/html"
+                        target="_blank">Voir</a>
+                </li>
+                <li>
+                    <strong>Formation videos CSS (fr) </strong> <a
+                        href="https://grafikart.fr/formations/html"
+                        target="_blank">Voir</a>
+                </li>
+                <li>
+                    <strong>Formation videos PHP (fr) </strong> <a
+                        href="https://grafikart.fr/formations/html"
+                        target="_blank">Voir</a>
+                </li>
+                
+    
+            </ul>
+
+
+            <h1>Documentations</h1>
+            <li>
+                <strong>Postgresql version 16 </strong> <a
+                    href="https://drive.google.com/file/d/1haKtlxdoe7HrdEp7FPj5qTpmQ29SlnNl/view?usp=sharing"
+                    target="_blank">Apprendre</a>
+            </li>
+            <h1>Notions de la programmation</h1>
+            <p>Priorite des operateurs en c++</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Opérateur</th>
+                        <th>Sens d'évaluation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>()</td>
+                        <td>De gauche à droite</td>
+                    </tr>
+                    <tr>
+                        <td>++, --, !</td>
+                        <td>De droite à gauche</td>
+                    </tr>
+                    <tr>
+                        <td>*, /, %</td>
+                        <td>De gauche à droite</td>
+                    </tr>
+                    <tr>
+                        <td>+, -</td>
+                        <td>De gauche à droite</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;, &lt;=, &gt;, &gt;=</td>
+                        <td>De gauche à droite</td>
+                    </tr>
+                    <tr>
+                        <td>==, !=</td>
+                        <td>De gauche à droite</td>
+                    </tr>
+                    <tr>
+                        <td>&amp;&amp;</td>
+                        <td>De gauche à droite, s'arrête si faux</td>
+                    </tr>
+                    <tr>
+                        <td>||</td>
+                        <td>De gauche à droite, s'arrête si vrai</td>
+                    </tr>
+                    <tr>
+                        <td>?:</td>
+                        <td>De droite à gauche</td>
+                    </tr>
+                    <tr>
+                        <td>=, +=, -=, *=, /=, %=</td>
+                        <td>De droite à gauche</td>
+                    </tr>
+                    <tr>
+                        <td>,</td>
+                        <td>De gauche à droite, retourne la valeur de droite</td>
+                    </tr>
+                </tbody>
+            </table>
+            <center>Exemples de programmes c++</center>
+
+            <details>
+                <summary>Premier programme</summary>
+                <p>Ceci est un exemple simple de programme C++ affichant "Hello, World!" à l'écran.</p>
+                <pre>
+                    <code class="language-cpp">
+                        #include &lt;iostream&gt;
+    
+                        int main() {
+                            cout &lt;&lt; "Bonjour le monde!" &lt;&lt; endl;
+                            return 0;
+                        }
+                    </code>
+                </pre>
+            </details>
+
+            <details>
+                <summary>Variables et Opérations</summary>
+                <p>Ce programme utilise des variables et effectue quelques opérations de base.</p>
+                <pre>
+                    <code class="language-cpp">
+                        #include &lt;iostream&gt;
+    
+                        int main() {
+                            // declaration des variables en c++
+                            int a = 5;
+                            int y = 20;
+                            double b = 2.5;
+                            char c = 'A';
+    
+                            cout &lt;&lt; "a + b = " &lt;&lt; a + b &lt;&lt; endl;
+                            cout &lt;&lt; "Character: " &lt;&lt; c &lt;&lt; endl;
+    
+                            return 0;
+                        }
+                    </code>
+                </pre>
+            </details>
+
+            <details>
+                <summary>Conditions</summary>
+                <p>Ce programme utilise des structures conditionnelles pour afficher si un nombre est positif, négatif
+                    ou nul.</p>
+                <pre>
+                    <code class="language-cpp">
+                        #include &lt;iostream&gt;
+    
+                        int main() {
+                            int num;
+    
+                            cout &lt;&lt; "Entrez un nombre : ";
+                            cin &gt;&gt; num;
+    
+                            if (num > 0) {
+                                cout &lt;&lt; "Le nombre est positif." &lt;&lt; endl;
+                            } else if (num < 0) {
+                                cout &lt;&lt; "Le nombre est négatif." &lt;&lt; endl;
+                            } else {
+                                cout &lt;&lt; "Le nombre est nul." &lt;&lt; endl;
+                            }
+    
+                            return 0;
+                        }
+                    </code>
+                </pre>
+            </details>
+
+            <details>
+                <summary>Boucles</summary>
+                <p>Ce programme utilise des boucles for, while et do...while pour afficher des itérations.</p>
+                <pre>
+                    <code class="language-cpp">
+                        #include &lt;iostream&gt;
+    
+                        int main() {
+                            // Boucle For
+                            for (int i = 0; i < 5; ++i) {
+                                cout &lt;&lt; "For loop iteration " &lt;&lt; i &lt;&lt; endl;
+                            }
+    
+                            // Boucle While
+                            int j = 0;
+                            while (j < 5) {
+                                cout &lt;&lt; "While loop iteration " &lt;&lt; j &lt;&lt; endl;
+                                ++j;
+                            }
+    
+                            // Boucle Do...While
+                            int k = 0;
+                            do {
+                                cout &lt;&lt; "Do...While loop iteration " &lt;&lt; k &lt;&lt; endl;
+                                ++k;
+                            } while (k < 5);
+    
+                            return 0;
+                        }
+                    </code>
+                </pre>
+            </details>
+
+            <details>
+                <summary>Tableaux</summary>
+                <p>Ce programme utilise des tableaux uni-dimensionnels et multi-dimensionnels.</p>
+                <pre>
+                    <code class="language-cpp">
+                        #include &lt;iostream&gt;
+    
+                        int main() {
+                            // Tableau uni-dimensionnel
+                            int arr1[5] = {1, 2, 3, 4, 5};
+    
+                            // Tableau multi-dimensionnel
+                            int arr2[2][3] = {{1, 2, 3}, {4, 5, 6}};
+    
+                            cout &lt;&lt; "Element at index 2 in arr1: " &lt;&lt; arr1[1] &lt;&lt; endl;
+                            cout &lt;&lt; "Element at index (1,2) in arr2: " &lt;&lt; arr2[1][2] &lt;&lt; endl;
+    
+                            return 0;
+                        }
+                    </code>
+                </pre>
+            </details>
+
+            <details>
+                <summary>Fonctions</summary>
+                <p>Ce programme définit une fonction pour additionner deux nombres.</p>
+                <pre>
+                    <code class="language-cpp">
+                        #include &lt;iostream&gt;
+    
+                        // Déclaration de fonction
+                        int add(int a, int b) {
+                            return a + b;
+                        }
+    
+                        int main() {
+                            int result = add(3, 4);
+                            cout &lt;&lt; "3 + 4 = " &lt;&lt; result &lt;&lt; endl;
+    
+                            return 0;
+                        }
+                    </code>
+                </pre>
+            </details>
+
+        </div>
+        <hr>
+    </div>
+    <script>
+        // colorer le code
+        var head = document.getElementsByTagName('head')[0]
+        var script = document.createElement('script')
+        script.src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+        script.type = 'text/javascript'
+
+        head.append(script)
+        script.addEventListener("load", () => {
+            hljs.highlightAll();
+            console.log("File loaded")
+        });
+    </script>
+</body>
+
+</html>
